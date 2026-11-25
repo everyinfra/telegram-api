@@ -93,8 +93,6 @@ These are the fields that the 3 capabilities returned in our test. Each meaning 
 | `url` | Link to the record on the platform. |
 | `platform` | Source platform identifier, the same as platform in the request (for example xiaohongshu, tiktok). |
 
-Other fields that the test returned: `subscriber_count_display`.
-
 All parameters and fields: <https://everyinfra.com/en/telegram-api/profile?utm_source=github&utm_medium=example_repo&utm_campaign=telegram-api>
 
 #### `channel_posts` (channel posts)
@@ -174,7 +172,7 @@ Before release, we ran the 3 commands in Quick start against the live API with t
 
 | Command | Time (Singapore, UTC+8) | Rows | Charged |
 |---|---|---|---|
-| `python main.py channel durov` | 2026-11-25 13:21 | 1 | $0.000556 |
+| `python main.py channel durov` | 2026-11-25 15:32 | 1 | $0.000556 |
 | `python main.py posts durov --out posts.csv` | 2026-11-25 13:21 | 20 | $0.000556 |
 | `python main.py search bitcoin --out messages.csv` | 2026-11-25 13:21 | 20 | $0.000556 |
 
@@ -269,8 +267,6 @@ Claude 网页版和桌面版的自定义连接器、ChatGPT 只能填网址：�
 | `url` | 该记录在原平台上的可访问链接。 |
 | `platform` | 数据来源平台标识，与请求里的 platform 一致（如 xiaohongshu、tiktok）。 |
 
-实测还返回了 `subscriber_count_display`，接口文档里还没有它的中文说明，表里没列。
-
 完整参数和字段：<https://everyinfra.com/telegram-api/profile?utm_source=github&utm_medium=example_repo&utm_campaign=telegram-api>
 
 #### `channel_posts`（频道帖子）
@@ -341,7 +337,7 @@ Telegram 有 6 个能力：频道帖子、主页或对象详情、关键词搜�
 
 | 命令 | 时间（新加坡时间） | 返回条数 | 扣费 |
 |---|---|---|---|
-| `python main.py channel durov` | 2026-11-25 13:21 | 1 | $0.000556 |
+| `python main.py channel durov` | 2026-11-25 15:32 | 1 | $0.000556 |
 | `python main.py posts durov --out posts.csv` | 2026-11-25 13:21 | 20 | $0.000556 |
 | `python main.py search bitcoin --out messages.csv` | 2026-11-25 13:21 | 20 | $0.000556 |
 
@@ -349,7 +345,7 @@ Telegram 有 6 个能力：频道帖子、主页或对象详情、关键词搜�
 
 ```json
 {
-  "subscriber_count": 9870000,
+  "subscriber_count": 9873301,
   "photo_count": 106,
   "video_count": 47,
   "link_count": 203

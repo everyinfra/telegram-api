@@ -59,7 +59,7 @@ def rows_of(data):
     """列表能力的 results 是数组；profile 这类详情能力是一个对象，这里统一成数组。"""
     res = data.get("results")
     if isinstance(res, dict):
-        return [res]
+        return [res] if res else []
     return res or []
 
 
